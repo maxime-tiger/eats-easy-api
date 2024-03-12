@@ -1,0 +1,28 @@
+spring:
+  application:
+    description: '@project.description@'
+    name: '@project.name@'
+    version: '@project.version@'
+  banner:
+    location: classpath:banner.txt
+  security:
+    user:
+      name: admin
+      password: admin
+      roles: ADMINISTRATEURS
+  datasource:
+    host: 127.0.0.1
+    port: 3306
+    dbname: eatseasy
+    username: eatseasy
+    password: Yukon900
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://${spring.datasource.host}:${spring.datasource.port}/${spring.datasource.dbname}?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Europe/Paris&autoReconnect=true&cacheResultSetMetaData=true&metadataCacheSize=1024&cachePrepStmtCacheSize=256&prepStmtCacheSqlLimit=4096&cacheServerConfiguration=true&defaultFetchSize=32&dontTrackOpenResources=true
+    hikari:
+      minimum-idle: 20
+      maximum-pool-size: 50
+      max-lifetime: 600000
+      idle-timeout: 300000
+
+server:
+  port: 8080

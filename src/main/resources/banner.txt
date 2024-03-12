@@ -1,0 +1,19 @@
+
+${AnsiColor.DEFAULT}          ,---,.                   ___                              ,---,.
+${AnsiColor.DEFAULT}        ,'  .' |                 ,--.'|_                          ,'  .' |
+${AnsiColor.DEFAULT}      ,---.'   |                 |  | :,'                       ,---.'   |
+${AnsiColor.DEFAULT}      |   |   .'                 :  : ' :    .--.--.            |   |   .'                 .--.--.
+${AnsiColor.DEFAULT}      :   :  |-,    ,--.--.    .;__,'  /    /  /    '           :   :  |-,    ,--.--.     /  /    '         .--,
+${AnsiColor.DEFAULT}      :   |  ;/|   /       \   |  |   |    |  :  /`./           :   |  ;/|   /       \   |  :  /`./       /_ ./|
+${AnsiColor.DEFAULT}      |   :   .'  .--.  .-. |  :__,'| :    |  :  ;_             |   :   .'  .--.  .-. |  |  :  ;_      , ' , ' :
+${AnsiColor.DEFAULT}      |   |  |-,   \__\/: . .    '  : |__   \  \    `.          |   |  |-,   \__\/: . .   \  \    `.  /___/ \: |
+${AnsiColor.DEFAULT}      '   :  ;/|   ," .--.; |    |  | '.'|   `----.   \         '   :  ;/|   ," .--.; |    `----.   \  .  \  ' |
+${AnsiColor.DEFAULT}      |   |    \  /  /  ,.  |    ;  :    ;  /  /`--'  /         |   |    \  /  /  ,.  |   /  /`--'  /   \  ;   :
+${AnsiColor.DEFAULT}      |   :   .' ;  :   .'   \   |  ,   /  '--'.     /          |   :   .' ;  :   .'   \ '--'.     /     \  \  ;
+${AnsiColor.DEFAULT}      |   | ,'   |  ,     .-./    ---`-'     `--'---'           |   | ,'   |  ,     .-./   `--'---'       :  \  \
+${AnsiColor.DEFAULT}      `----'      `--`---'                                      `----'      `--`---'                       \  ' ;
+${AnsiColor.DEFAULT}                                                                                                            `--`
+
+${AnsiColor.DEFAULT}
+${spring.application.name} version ${spring.application.version}
+Spring Boot version ${spring-boot.version}
