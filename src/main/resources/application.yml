@@ -24,5 +24,10 @@ spring:
       max-lifetime: 600000
       idle-timeout: 300000
 
+  liquibase:
+    change-log: classpath:db/master-changelog.xml
+    enabled: true
+    drop-first: false
+
 server:
   port: 8080
