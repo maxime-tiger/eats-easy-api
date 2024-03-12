@@ -1,0 +1,28 @@
+version: "3.5"
+
+networks:
+  mysql_net:
+
+volumes:
+  mysql_vol:
+
+services:
+  ## Server Mysql
+  mysql:
+    image: mariadb:10.10
+    command: --max_allowed_packet=16777216
+    container_name: mysql_eats_easy
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=eatseasy
+      - MYSQL_USER=eatseasy
+      - MYSQL_PASSWORD=Yukon900
+      - MYSQL_ROOT_PASSWORD=root900
+      - MYSQL_TCP_PORT=3306
+      - MYSQL_X_PORT=33060
+    volumes:
+      - mysql_vol:/var/lib/mysql
+    networks:
+      mysql_net:
