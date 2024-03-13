@@ -23,7 +23,7 @@ public class RestaurantsEndpoint {
     private ModelMapper mapper;
 
     @GetMapping(value = "")
-    public ResponseEntity<?> getRestaurantById(
+    public ResponseEntity<Restaurants> getRestaurantById(
             @PathVariable("restauId") Long restauId
     ) {
         Restaurants restaurants = restaurantsService.findOne(restauId);
@@ -48,7 +48,7 @@ public class RestaurantsEndpoint {
     }
 
     @PutMapping(value = "/{restauId}", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<?> updateRestaurant(
+    public ResponseEntity<Long> updateRestaurant(
         @PathVariable("restauId") Long restauId,
         @RequestBody RestaurantResource restaurantResource
     ) {
@@ -64,7 +64,7 @@ public class RestaurantsEndpoint {
     }
 
     @DeleteMapping(value = "/{restauId}")
-    public ResponseEntity<?> deleteRestaurant(
+    public ResponseEntity<HttpStatus> deleteRestaurant(
             @PathVariable("restauId") Long restauId
     ) {
         Restaurants restaurants = restaurantsService.findOne(restauId);
